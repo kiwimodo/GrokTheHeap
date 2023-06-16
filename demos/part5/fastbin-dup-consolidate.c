@@ -4,7 +4,8 @@
 
 void main() {
 	void *ptr[7];
-
+	
+	// Fill up tcache
 	for(int i = 0; i < 7; i++)
 		ptr[i] = malloc(0x40);
 	for(int i = 0; i < 7; i++)

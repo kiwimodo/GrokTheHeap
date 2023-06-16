@@ -23,12 +23,9 @@ int main()
 	printf("c: %p\n", c);
 
 	free(a);
-
 	// free(a);
-
 	free(b);
-
-	free(a);
+	free(a); // Vuln
 
 	a = calloc(1, 8);
 	b = calloc(1, 8);
